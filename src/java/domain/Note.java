@@ -8,15 +8,9 @@ import java.io.Serializable;
  * @author 730676
  */
 public class Note implements Serializable{
-    private String title;
-    private String contents;
+    String title;
+    String contents;
 
-    public Note() {
-        title = "";
-        contents = "";
-    }
-
-    
     
     public Note(String title, String contents) {
         this.title = title;
@@ -39,5 +33,7 @@ public class Note implements Serializable{
         this.contents = contents;
     }
     
-    
+    public Note getNote(){
+        return this;
+    }
 }
